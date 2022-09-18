@@ -123,6 +123,11 @@ const searchKey=ref('')
     </div>
   </el-affix>
   <router-view />
+  <el-backtop :bottom="100" style="width: 48px;height:48px;">
+    <div class="backtop">
+      <i class="iconfont icon-huidaodingbu"></i>
+    </div>
+  </el-backtop>
 </template>
 
 <style scoped>
@@ -238,6 +243,14 @@ const searchKey=ref('')
         box-shadow: none;
       }
     }
+  }
+}
+.backtop{
+  line-height: 40;
+  color: #333;
+  i{
+    font-size: 30px;
+    font-weight: 700;
   }
 }
 </style>
